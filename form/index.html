@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body>
+    <h1>Join Form</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>필수 사항</legend>
+            <p>
+                <label for="username">Name:</label>
+                <input type="text" id="username" required>
+            </p>
+            <p>
+                <label for="useremail">Email:</label>
+                <input type="text" id="useremail" required>
+            </p>
+            <p>
+                <label for="userpw">Password:</label>
+                <input type="password" id="userpw" required>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>옵션 사항</legend>
+            <p>
+                <label for="address">주소</label>
+                <select name="" id="address">
+                    <option value="서울시">서울시</option>
+                    <option value="경기도">경기도</option>
+                    <option value="제주도">제주도</option>
+                </select>
+            </p>
+            <p>
+                <span>성별</span>
+                <label for="male">남성</label>
+                <input type="radio" name="gender" id="male">
+                <label for="female">여성</label>
+                <input type="radio" name="gender" id="female">
+            </p>
+            <p>
+                <span>관심사항</span>
+                <label for="HTML">HTML</label>
+                <input type="checkbox" name="interest" id="HTML" value="HTML">
+                <label for="css">css</label>
+                <input type="checkbox" name="interest" id="css" value="css">
+                <label for="javascript">javascript</label>
+                <input type="checkbox" name="interest" id="javascript" value="javascript">
+            </p>
+            <p>
+                <label for="message">인사말</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </p>
+            <p>
+                <label for="profile">이미지 등록</label>
+                <input type="file" name="profile" id="profile">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>HTML5 Type</legend>
+            <p>
+                <label for="website">웹사이트</label>
+                <input type="url" name="website" id="website">
+            </p>
+            <p>
+                <label for="birth">생년월일</label>
+                <input type="date" name="birth" id="birth">
+            </p>
+            <p>
+                <label for="langs">언어 선택</label>
+                <input id="langs" name="langs" list="mylist">
+                <datalist id="mylist">
+                    <option value="html">
+                    <option value="css">
+                    <option value="javascript">
+                    <option value="jQuery">
+                </datalist>
+            </p>
+            <p>
+                <label for="carrer">경력 기간</label>
+                <input type="number" name="carrer" id="carrer" min="0" max="20" step="2">
+            </p>
+            <p>
+                <label for="languages">학습할 언어 선택</label>
+                <select name="languages" id="languages">
+                    <optgroup label="frontend">
+                        <option value="html">html</option>
+                        <option value="css">css</option>
+                        <option value="javascript">javascript</option>
+                    </optgroup>
+                    <optgroup label="backend">
+                        <option value="php">php</option>
+                        <option value="jsp">jsp</option>
+                        <option value="asp">asp</option>
+                    </optgroup>
+                </select>
+            </p>
+        </fieldset>
+        <p>
+            <!-- <input type="submit" value="가입하기"> -->
+            <button>가입하기</button>
+        </p>
+        
+    </form>
+</body>
+
+</html>
